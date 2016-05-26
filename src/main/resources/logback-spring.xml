@@ -1,0 +1,37 @@
+<configuration>
+  <property name="FILE_LOG_PATTERN" value="%d{dd/MM/yyyy HH:mm:ss.SSS} | %thread | %-5level | %X{trans_id} | %logger{0} | %msg %n" />
+  <property name="LOG_PATH" value="/data/logs/toggle-service" />
+  
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${FILE_LOG_PATTERN}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>
+	</appender>
+  
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder>
+      <pattern>${FILE_LOG_PATTERN}</pattern>
+    </encoder>
+    <file>${LOG_PATH}/application.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_PATH}/application.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+      <!-- keep 90 days' worth of history -->
+      <maxHistory>90</maxHistory>
+    </rollingPolicy>
+
+    <encoder>
+      <pattern>${FILE_LOG_PATTERN}</pattern>
+    </encoder>
+  </appender> 
+
+  <root level="INFO">
+  	<appender-ref ref="CONSOLE" />
+    <appender-ref ref="FILE" />
+  </root>
+  
+</configuration>
