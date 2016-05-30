@@ -1,4 +1,4 @@
-package com.toggle.config;
+package com.github.lavenderkiller.toggle.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

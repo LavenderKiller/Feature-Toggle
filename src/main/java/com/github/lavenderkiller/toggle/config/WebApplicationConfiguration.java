@@ -1,6 +1,6 @@
-package com.toggle.config;
+package com.github.lavenderkiller.toggle.config;
 
-import com.toggle.interceptor.FeatureToggleInterceptor;
+import com.github.lavenderkiller.toggle.interceptor.FeatureToggleInterceptor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

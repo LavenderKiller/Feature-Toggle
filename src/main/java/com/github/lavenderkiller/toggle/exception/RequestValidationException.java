@@ -1,4 +1,4 @@
-package com.toggle.exception;
+package com.github.lavenderkiller.toggle.exception;
 
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;

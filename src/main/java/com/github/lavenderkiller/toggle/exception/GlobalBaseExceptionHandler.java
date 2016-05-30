@@ -1,4 +1,4 @@
-package com.toggle.exception;
+package com.github.lavenderkiller.toggle.exception;
 
 import java.util.Locale;
 

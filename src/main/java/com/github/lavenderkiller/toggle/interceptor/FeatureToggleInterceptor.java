@@ -1,4 +1,4 @@
-package com.toggle.interceptor;
+package com.github.lavenderkiller.toggle.interceptor;
 
 import java.lang.reflect.Method;
 
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.toggle.annotation.SupportFeatureToggle;
-import com.toggle.feature.reader.util.ConsulReader;
+import com.github.lavenderkiller.toggle.annotation.SupportFeatureToggle;
+import com.github.lavenderkiller.toggle.feature.reader.util.ConsulReader;
 
 @Component
 public class FeatureToggleInterceptor extends HandlerInterceptorAdapter {

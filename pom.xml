@@ -3,12 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.toggle</groupId>
+	<groupId>com.github.lavenderkiller</groupId>
 	<artifactId>toggle-service</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>toggle-service</name>
 	<description>Toggle Service</description>
-	<url>http://www.demo.com</url>
 	
 	<licenses>
         <license>
@@ -19,10 +18,10 @@
     
     <developers>
         <developer>
-            <name>demo</name>
-            <email>demo@sample.com</email>
-            <organization>demo</organization>
-            <organizationUrl>https://www.demo.com</organizationUrl>
+            <name>Anan Dawsai</name>
+            <email>anan.daw@ascendcorp.com</email>
+            <organization>ascendcorp</organization>
+            <organizationUrl>https://www.ascendcorp.com</organizationUrl>
         </developer>
     </developers>
 

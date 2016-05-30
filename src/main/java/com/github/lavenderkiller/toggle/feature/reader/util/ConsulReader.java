@@ -1,4 +1,4 @@
-package com.toggle.feature.reader.util;
+package com.github.lavenderkiller.toggle.feature.reader.util;
 
 import java.util.Iterator;
 import java.util.List;
